@@ -5,7 +5,7 @@ describe("1. Testes Backend", () => {
 //  let token;
 
   before(() => {
-    cy.getToken("vinivioti@yahoo.com.br", "Cypress@123")
+    cy.getToken("testelino@teste.com", "Cypress@123")
 //      .then((tkn) => {
 //      token = tkn;
 //    });
