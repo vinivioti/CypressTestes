@@ -35,11 +35,11 @@ Cypress.Commands.add("clickAlerta", (locator, message) => {
 
 Cypress.Commands.add("login", (XP_USER, PASSWORD) => {
   cy.visit("http://barrigareact.wcaquino.me/");
-  //   cy.get(loc.LOGIN.USER).type('vinivioti@yahoo.com.br')
+  //   cy.get(loc.LOGIN.USER).type('testelino@teste.com')
   cy.xpath(loc.LOGIN.XP_USER).type(XP_USER);
   cy.get(loc.LOGIN.PASSWORD).type(PASSWORD);
   cy.get(loc.LOGIN.BTN_LOGIN).click();
-  cy.get(loc.MESSAGE.GET_MESSAGE).should("have.text", "Bem vindo, Vinissius!");
+  cy.get(loc.MESSAGE.GET_MESSAGE).should("have.text", "Bem vindo, Testelino!");
   cy.get(".toast-close-button").click();
 })
 
