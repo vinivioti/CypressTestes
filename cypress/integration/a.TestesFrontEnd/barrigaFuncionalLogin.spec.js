@@ -6,10 +6,10 @@ describe('Alerts....', () => {
     
     before(() => {
         cy.visit('http://barrigareact.wcaquino.me/')
-        cy.xpath("//input[@data-test='email']").type('vinivioti@yahoo.com.br')
+        cy.xpath("//input[@data-test='email']").type('testelino@teste.com')
         cy.xpath("//input[@data-test='passwd']").type('Cypress@123')
         cy.xpath("//button[@type='submit']").click()
-        cy.xpath("//div[@class='toast-message']").should('have.text', 'Bem vindo, Vinissius!')
+        cy.xpath("//div[@class='toast-message']").should('have.text', 'Bem vindo, Testelino!')
     })    
     
    // beforeEach(() => {
