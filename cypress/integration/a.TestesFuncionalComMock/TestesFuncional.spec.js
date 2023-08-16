@@ -13,7 +13,7 @@ describe("Testes Com Mock", () => {
 
   beforeEach(() => {
     buildEnvironment();
-    cy.loginFaker("vinivioti@yahoo.com.br", "123456789jlkjlkjkl");
+    cy.loginFaker("testelino@teste.com", "123456789jlkjlkjkl");
     //  cy.resetApp()
   });
 
