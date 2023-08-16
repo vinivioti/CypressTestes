@@ -9,7 +9,7 @@ describe("Alerts....", () => {
   //*********  PROCESSO USANDO SUPPORT COMMAND: ***********
 
   before(() => {
-    cy.login("vinivioti@yahoo.com.br", "Cypress@123");
+    cy.login("testelino@teste.com", "Cypress@123");
     //  cy.resetAppli()
   });
 
@@ -58,13 +58,6 @@ describe("Alerts....", () => {
     cy.get(loc.EXTRATO.LINHAS).should("have.length", 7);
     //  cy.xpath(loc.EXTRATO.XP_BUSCA_ELEMENTO).should('exist')
   });
-
-  // it('Deve pegar Saldo', () => {
-  //     cy.get(loc.MENU.HOME).click()
-  //   // cy.get(loc.SALDO.FN_XP_SALDO_CONTA('DESCRIÇAO UM')).should('contain','10.003,00')
-  //     cy.xpath(loc.EXTRATO.XP_BUSCA_SALDO).should('contain','Conta Vioti Alterada')
-
-  // })
 
   // RESET FOI PARA LOCATORS E COMMANDS.JS
 
