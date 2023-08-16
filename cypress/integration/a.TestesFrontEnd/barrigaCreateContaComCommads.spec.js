@@ -9,7 +9,7 @@ describe('Alerts....', () => {
     
 
     before(() => {
-      cy.login('vinivioti@yahoo.com.br', 'Cypress@123')
+      cy.login('testelino@teste.com', 'Cypress@123')
     //  cy.resetApp()
     })    
 
