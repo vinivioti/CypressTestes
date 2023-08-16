@@ -1,19 +1,45 @@
   # CypressTestes
 testes automatizados de back e front com Cypress
 
-Para rodar os testes na sua máquina, baixe o projeto localmente, abra o Terminal e rode os seguintes comandos: 
+Clone o projeto para uma pasta qualquer em seu SO
 
-Para rodar Todos os testes -> 
-npm run cypress:open *( esse modo roda em headless - sem tela )*
+```bash 
+git clone https://github.com/vinivioti/CypressTestes.git
+```
+# Instalando
 
-Para rodar abrindo a tela e mantendo a tela após a execução:
-npm run cypress:open --headed --no-exit
+Execute o comando para baixar e instalar todas as dependências do projeto (package.json):
 
+```bash
+npm i
+```
+
+Instale o cypress usando npm. Através do CDM, na pasta do projeto, execute o seguinte comando
+```bash
+npm i cypress -D
+```
+# Executando:
+
+```bash
+npm run cypress:run   *( esse modo rodará todos os testes headless - sem tela - )*
+```
+```bash
+npm run cypress:open   *( esse modo abrirá uma tela Cypress e vc pode escolher os cenários, clicando sobre eles na tela nova )*
+```
+*Para rodar abrindo a tela e mantendo-a aberta após a execução:*
+```bash
+npm run cypress:run --headed --no-exit
+```
 ## Para rodar uma pasta específica: ##
-npm run cypress:run -- --spec "cypress/integration/a.TestesBackEnd/**/*.spec.js" --headed --no-exit
 
-## Para rodar uma pasta específica abrindo o navegador e mantendo a tela após a execução: ##
-npm run cypress:run -- --spec "cypress/integration/a.TestesBackEnd/**/*.spec.js" --headed --no-exit
+***(Modo com tela aberta):
+```bash
+npm run cypress:run -- --spec "./cypress/integration/a.TestesBackEnd/**/*.spec.js" --headed --no-exit   
+```
+***(modo headless - sem tela):
+```bash
+npm run cypress:run -- --spec "./cypress/integration/a.TestesBackEnd/**/*.spec.js"   
+```
 
 ## **Pastas que podem ser rodadas uma a uma:** ## 
 - a.TestesBackEnd
