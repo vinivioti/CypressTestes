@@ -67,7 +67,7 @@ Cypress.Commands.add("getToken", (user, passwd) => {
 })
 
 Cypress.Commands.add("resetRest", () => {
-  cy.getToken("vinivioti@yahoo.com.br", "Cypress@123").then((token) => {
+  cy.getToken("testelino@teste.com", "Cypress@123").then((token) => {
     cy.request({
       method: "GET",
       url: "/reset",
@@ -79,7 +79,7 @@ Cypress.Commands.add("resetRest", () => {
 })
 
 Cypress.Commands.add("getContaByName", (name) => {
-  cy.getToken("vinivioti@yahoo.com.br", "Cypress@123").then((token) => {
+  cy.getToken("testelino@teste.com", "Cypress@123").then((token) => {
     cy.request({
       url: "/contas",
       method: "GET",
@@ -109,7 +109,7 @@ Cypress.Commands.overwrite('request', (originalFn, ...options)=> {
 
 Cypress.Commands.add("loginFaker", (XP_USER, PASSWORD) => {
   cy.visit("http://barrigareact.wcaquino.me/");
-  //   cy.get(loc.LOGIN.USER).type('vinivioti@yahoo.com.br')
+  //   cy.get(loc.LOGIN.USER).type('testelino@teste.com')
   cy.xpath(loc.LOGIN.XP_USER).type(XP_USER);
   cy.get(loc.LOGIN.PASSWORD).type(PASSWORD);
   cy.get(loc.LOGIN.BTN_LOGIN).click();
